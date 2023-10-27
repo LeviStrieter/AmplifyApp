@@ -8,13 +8,18 @@ function App() {
   return (
     <div>
       {<Navbar />}
-      <div>
 
-      </div>
-      <div class="row d-flex " padding="20px">
-      {<Card {...18} />}
-      {<Card {...18} />}
-      {<Card {...18} />}
+      <div class="text-center" margin="20px">
+        <h1>CS 230L</h1>
+          <h2>Section - 003</h2>
+          <p>WVU ID: 800383874</p>
+          <p>Hi I am Levi</p>
+        </div>
+
+      <div class="d-inline-flex" margin="20px">
+      {<Card title="Card 1"/>}
+      {<Card title="Card 2"/>}
+      {<Card title="Card 3"/>}
       </div>
     </div>
 
