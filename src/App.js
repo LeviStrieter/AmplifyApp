@@ -1,14 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import Navbar from './navbar'
+import Card from './card.js'
 
 function App() {
   return (
-    <div className="App">
-      <h1>CS 230L</h1>
-      <h2>Section - 05</h2>
-      <p>WVU ID: 800383874</p>
-      <p>Hi I am Levi</p>
+    <div>
+      {<Navbar />}
+      <div>
+
+      </div>
+      <div class="row d-flex " padding="20px">
+      {<Card {...18} />}
+      {<Card {...18} />}
+      {<Card {...18} />}
+      </div>
     </div>
+
+    
   );
 }
 
