@@ -1,26 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import Navbar from './navbar'
-import Card from './card.js'
+import Navbar from './componets/navbar.js'
+import Home from './Pages/Home.js';
+import Card_Page from './Pages/Card_Page.js';
+import Contact from './Pages/Contact.js';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
+    <BrowserRouter>
       {<Navbar />}
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/card" element={<Card_Page />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+        </Routes>
+      </BrowserRouter>
 
-      <div class="text-center" margin="20px">
-        <h1>CS 230L</h1>
-          <h2>Section - 003</h2>
-          <p>WVU ID: 800383874</p>
-          <p>Hi I am Levi</p>
-        </div>
-
-      <div class="d-inline-flex" margin="20px">
-      {<Card title="Card 1"/>}
-      {<Card title="Card 2"/>}
-      {<Card title="Card 3"/>}
-      </div>
     </div>
 
     
